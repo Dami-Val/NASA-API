@@ -6,7 +6,7 @@ function ImplementacionCodigoRover() {
       <h2>Código de Implementación Mars Rover Photos</h2>
       <p>Aquí está el código JavaScript utilizado para interactuar con la API Mars Rover Photos en esta demostración:</p>
       <pre>
-{`const API_KEY = 'bAAnDfis8xgDe7SqToTxqQKD3sWVTgMQLqJexjS0';
+{`const API_KEY = 'Puedes usar tu propia clave API de NASA aquí';
 const API_URL = 'https://api.nasa.gov/mars-photos/api/v1/rovers';
 
 async function obtenerFotosRover(rover, params = {}) {

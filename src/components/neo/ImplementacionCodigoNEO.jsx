@@ -6,7 +6,7 @@ function ImplementacionCodigoNEO() {
       <h2>Código de Implementación NEO</h2>
       <p>Aquí está el código JavaScript utilizado para interactuar con la API NeoWs (Near Earth Object Web Service) en esta demostración:</p>
       <pre>
-{`const API_KEY = 'bAAnDfis8xgDe7SqToTxqQKD3sWVTgMQLqJexjS0';
+{`const API_KEY = 'Puedes usar tu propia clave API de NASA aquí';
 const API_BASE_URL = 'https://api.nasa.gov/neo/rest/v1';
 
 /**
