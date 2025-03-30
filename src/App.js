@@ -22,7 +22,7 @@ function Header() {
   return (
     <header>
       <h1>Explorador de la API APOD de NASA</h1>
-      <p>Explora la API de Imagen Astronómica del Día de la NASA</p>
+      <p>En este Blog, explora las maravillosas funcinalidad que nos ofrece la API gratuita de la NASA.</p>
     </header>
   );
 }
@@ -46,6 +46,7 @@ function InformacionAPI() {
             <th>Tipo</th>
             <th>Predeterminado</th>
             <th>Descripción</th>
+          
           </tr>
         </thead>
         <tbody>
