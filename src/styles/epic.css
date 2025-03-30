@@ -1,0 +1,173 @@
+/* Estilos específicos para el componente EPIC */
+.epic-viewer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  .epic-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-height: none;
+    overflow-y: auto;
+  }
+  
+  .epic-thumbnail {
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .epic-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .epic-thumbnail.selected {
+    border-color: #0b3d91;
+    box-shadow: 0 0 0 2px rgba(11, 61, 145, 0.5);
+  }
+  
+  .epic-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .epic-thumbnail small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 10px;
+    padding: 2px 4px;
+    text-align: center;
+  }
+  
+  .epic-main-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .epic-image-container {
+    margin-bottom: 20px;
+    flex: 2;
+  }
+  
+  .epic-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .epic-info {
+    flex: 1;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .epic-info h3 {
+    margin-top: 0;
+    color: #0b3d91;
+  }
+  
+  .epic-coordinates {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f0f7ff;
+    border-radius: 6px;
+    border-left: 3px solid #0b3d91;
+  }
+  
+  .epic-coordinates h4 {
+    margin-top: 0;
+    color: #0b3d91;
+  }
+  
+  .epic-download-link {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #0b3d91;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .epic-download-link:hover {
+    background-color: #0e2e62;
+    text-decoration: none;
+  }
+  
+  /* Media queries */
+  @media (min-width: 768px) {
+    .epic-viewer {
+      flex-direction: row;
+    }
+    
+    .epic-thumbnails {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 120px;
+      margin-right: 20px;
+      margin-bottom: 0;
+      max-height: 600px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .epic-main-image {
+      flex-direction: row;
+    }
+    
+    .epic-image-container {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .epic-thumbnails {
+      justify-content: center;
+    }
+    
+    .epic-thumbnail {
+      width: 70px;
+      height: 70px;
+    }
+    
+    .epic-img {
+      max-height: 350px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .epic-thumbnail {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .epic-thumbnail small {
+      font-size: 8px;
+      padding: 1px 2px;
+    }
+    
+    .epic-info {
+      padding: 15px;
+    }
+  }
