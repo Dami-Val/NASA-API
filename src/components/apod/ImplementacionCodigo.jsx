@@ -6,7 +6,7 @@ function ImplementacionCodigo() {
       <h2>Código de Implementación APOD</h2>
       <p>Aquí está el código JavaScript utilizado para interactuar con la API APOD en esta demostración:</p>
       <pre>
-{`const API_KEY = 'bAAnDfis8xgDe7SqToTxqQKD3sWVTgMQLqJexjS0';
+{`const API_KEY = 'Puedes usar tu propia clave API de NASA aquí';
 const API_URL = 'https://api.nasa.gov/planetary/apod';
 
 async function obtenerAPOD(params = {}) {

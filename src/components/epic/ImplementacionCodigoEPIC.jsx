@@ -6,7 +6,7 @@ function ImplementacionCodigoEPIC() {
       <h2>Código de Implementación EPIC</h2>
       <p>Aquí está el código JavaScript utilizado para interactuar con la API EPIC en esta demostración:</p>
       <pre>
-{`const API_KEY = 'bAAnDfis8xgDe7SqToTxqQKD3sWVTgMQLqJexjS0';
+{`const API_KEY = 'Puedes usar tu propia clave API de NASA aquí';
 const API_BASE_URL = 'https://api.nasa.gov/EPIC/api';
 const ARCHIVE_BASE_URL = 'https://api.nasa.gov/EPIC/archive';
 
