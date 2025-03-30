@@ -293,16 +293,7 @@ function ExploradorAPOD() {
           </div>
         )}
         
-        <div className="form-group">
-          <label>
-            <input 
-              type="checkbox" 
-              checked={incluirMiniaturas} 
-              onChange={(e) => setIncluirMiniaturas(e.target.checked)}
-            /> 
-            Incluir Miniaturas de Video
-          </label>
-        </div>
+
         
         <button type="submit">Obtener APOD</button>
       </form>
