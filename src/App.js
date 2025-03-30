@@ -227,9 +227,6 @@ function ExploradorAPOD() {
       <h2>Explorador Interactivo APOD</h2>
       <p>Utiliza el formulario a continuación para explorar la API de Imagen Astronómica del Día de la NASA. Puedes obtener la imagen de hoy, una fecha específica o múltiples imágenes aleatorias.</p>
       
-      <div className="warning">
-        Nota: Tu clave de API está preconfigurada para esta demostración: <strong>bAAnDfis8xgDe7SqToTxqQKD3sWVTgMQLqJexjS0</strong>
-      </div>
       
       <form onSubmit={manejarEnvio}>
         <div className="form-group">
@@ -438,7 +435,7 @@ function ImplementacionCodigo() {
       <h2>Código de Implementación</h2>
       <p>Aquí está el código JavaScript utilizado para interactuar con la API APOD en esta demostración:</p>
       <pre>
-{`const API_KEY = 'bAAnDfis8xgDe7SqToTxqQKD3sWVTgMQLqJexjS0';
+{`const API_KEY = '(puedes obtener una API key gratuita en https://api.nasa.gov/)';
 const API_URL = 'https://api.nasa.gov/planetary/apod';
 
 async function obtenerAPOD(params = {}) {
