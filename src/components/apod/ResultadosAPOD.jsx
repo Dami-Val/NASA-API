@@ -8,9 +8,21 @@ function ResultadosAPOD({ resultados }) {
   
   return (
     <div className="apod-results">
-      {resultados.map((apod, index) => (
-        <TarjetaAPOD key={`${apod.date}-${index}`} apod={apod} index={index} />
-      ))}
+      <h3 className="results-title">
+        Resultados encontrados: {resultados.length}
+      </h3>
+      
+      <div className="apod-results-grid">
+        {resultados.map((apod, index) => (
+          <div 
+            className="apod-result-item reveal" 
+            key={`${apod.date}-${index}`}
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            <TarjetaAPOD apod={apod} index={index} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
