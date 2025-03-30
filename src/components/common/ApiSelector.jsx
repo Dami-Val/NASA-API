@@ -21,6 +21,18 @@ function ApiSelector({ apiActiva, setApiActiva }) {
       >
         Imágenes EPIC de la Tierra
       </button>
+      <button 
+        className={apiActiva === 'neo' ? 'active' : ''} 
+        onClick={() => setApiActiva('neo')}
+      >
+        Objetos Cercanos a la Tierra
+      </button>
+      <button 
+        className={apiActiva === 'exoplanet' ? 'active' : ''} 
+        onClick={() => setApiActiva('exoplanet')}
+      >
+        Explorador de Exoplanetas
+      </button>
     </div>
   );
 }

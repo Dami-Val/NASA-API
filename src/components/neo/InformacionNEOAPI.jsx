@@ -1,6 +1,8 @@
 import React from 'react';
 
 function InformacionNEOAPI() {
+    const asteroid_id = <pre>https://api.nasa.gov/neo/rest/v1/neo/3542519?api_key=bAAnDfis8xgDe7SqToTxqQKD3sWVTgMQLqJexjS0</pre>
+
   return (
     <section className="api-section">
       <h2>Acerca de la API de Objetos Cercanos a la Tierra (NEO)</h2>
